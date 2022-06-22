@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(" Цикл " + i);
+        int currentNum = 0;
+        while (currentNum < 10) {
+            System.out.print(++currentNum  + "");
         }
+        System.out.println();
 
-        for (int i = 0; i > 10; i++ ) {
-            System.out.println("Цикл " + --i);
+        for (; currentNum > 0; currentNum-- ) {
+            System.out.print(currentNum + "");
         }
 
         for (int b = 3; b < 31; b = b +7) {
